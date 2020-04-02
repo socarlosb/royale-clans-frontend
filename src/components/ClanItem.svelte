@@ -26,7 +26,7 @@
 </style>
 
 <section class="box-light">
-  <div class="flex-colum space-between" style="flex:1; margin:0 10px">
+  <div class="flex-colum space-between">
     <p>{name}</p>
     <div class="flex space-between">
       <div class="flex">
@@ -59,11 +59,11 @@
     </div>
 
   </div>
-  <div class="flex-colum space-around" style="margin:0 30px">
+  <div class="flex-colum space-around">
     <p class="grey">Members</p>
     <p class="box-dark center">{members}/50</p>
   </div>
-  <div class="box-dark" style="margin:0 10px">
+  <div class="box-dark">
     <div class="flex flex-end">
       <p class="">{clanScore}</p>
       <img
