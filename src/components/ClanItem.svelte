@@ -25,11 +25,13 @@
   }
 </style>
 
-<section class="box-light">
-  <div class="flex-colum space-between">
+<section class="box-light flex space-between">
+  <div
+    class="flex-colum space-around"
+    style="flex:3; width:100%; margin-right: 5px;">
     <p>{name}</p>
     <div class="flex space-between">
-      <div class="flex">
+      <div class="flex" style="align-items: center;">
         <img
           class="mr"
           height="20"
@@ -38,7 +40,7 @@
           alt="background image" />
         <p>{avgWinRate}%</p>
       </div>
-      <div class="flex">
+      <div class="flex" style="align-items: center;">
         <img
           class="mr"
           height="20"
@@ -47,7 +49,7 @@
           alt="background image" />
         <p>{avgDonations}</p>
       </div>
-      <div class="flex">
+      <div class="flex" style="align-items: center;">
         <img
           class="mr"
           height="20"
@@ -57,30 +59,33 @@
         <p>{avgWarWinRate}%</p>
       </div>
     </div>
-
   </div>
-  <div class="flex-colum space-around">
-    <p class="grey">Members</p>
-    <p class="box-dark center">{members}/50</p>
-  </div>
-  <div class="box-dark">
-    <div class="flex flex-end">
-      <p class="">{clanScore}</p>
-      <img
-        class="ml"
-        height="20"
-        width="20"
-        src={imgTrophy}
-        alt="background image" />
+  <div class="flex space-between" style="flex:1; width:100%; margin-left: 5px;">
+    <div
+      class="flex-colum space-around"
+      style="font-size: 0.8em; margin-right: 10px">
+      <p class="grey">Members</p>
+      <p class="box-dark center">{members}/50</p>
     </div>
-    <div class="flex flex-end">
-      <p class="">{clanWarTrophies}</p>
-      <img
-        class="ml"
-        height="20"
-        width="20"
-        src={imgWTrophy}
-        alt="background image" />
+    <div class="box-dark flex-colum space-around">
+      <div class="flex flex-end" style="align-items: center;">
+        <p class="">{clanScore}</p>
+        <img
+          class="ml"
+          height="20"
+          width="20"
+          src={imgTrophy}
+          alt="background image" />
+      </div>
+      <div class="flex flex-end" style="align-items: center;">
+        <p class="">{clanWarTrophies}</p>
+        <img
+          class="ml"
+          height="20"
+          width="20"
+          src={imgWTrophy}
+          alt="background image" />
+      </div>
     </div>
   </div>
 </section>
