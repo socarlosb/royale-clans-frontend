@@ -67,7 +67,9 @@
       <p class="grey">Members</p>
       <p class="box-dark center">{members}/50</p>
     </div>
-    <div class="box-dark flex-colum space-around">
+    <div
+      class="box-dark flex-colum space-around"
+      style="min-width:100px; align-items: center;">
       <div class="flex flex-end" style="align-items: center;">
         <p class="">{clanScore}</p>
         <img
