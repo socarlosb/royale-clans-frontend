@@ -31,7 +31,7 @@
           if (clansData.length === clanList.length) {
             localStorage.setItem("royale", JSON.stringify(clansData));
           }
-        }, 5000 * index);
+        }, 1000 * index);
       }
     });
   }
